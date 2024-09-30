@@ -5,8 +5,8 @@ public class PemilihanHari03 {
 
         String dayName, dayType;
 
-        System.out.prin("Input day nama: ");
-        dayName = sc.nextInt();
+        System.out.print("Input day name: ");
+        dayName = sc.nextLine();
 
         switch (dayName.toLowerCase()) {
             case "monday":
@@ -15,6 +15,10 @@ public class PemilihanHari03 {
             case "thursday":
             case "friday":
                 dayType = "weekday";
+                break;
+            case "saturday":
+            case "sunday":
+                dayType = "weekend";
                 break;
             default:
                 dayType = "invalid day name";
