@@ -13,7 +13,7 @@ public class PemilihanSwitch03 {
         System.out.print("Masukkan operator (+ - * :)");
         operator = sc.next().charAt(0);
 
-        switch (operator) {
+        switch {
             case '+':
                 hasil = angka1 + angka2;
                 break;
@@ -27,8 +27,9 @@ public class PemilihanSwitch03 {
                 hasil = angka1 / angka2;
                 break;
         }
-
-        System.out.println(angka1 + operator + angka2 + " = " + hasil);
+        default:
+        System.out.println("Maaf, operator yang anda pilih tidak sesuai");
+        System.out.println(angka1 + " " + operator + " " + angka2 + " = " + hasil);
 
     }
 }
